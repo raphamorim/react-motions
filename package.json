@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Nothing to see here yet",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raphamorim/react-motions.git"
@@ -16,5 +13,23 @@
   "bugs": {
     "url": "https://github.com/raphamorim/react-motions/issues"
   },
-  "homepage": "https://github.com/raphamorim/react-motions#readme"
+  "homepage": "https://github.com/raphamorim/react-motions#readme",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "react": "^16.4.0-alpha.0911da3",
+    "react-dom": "^16.4.0-alpha.0911da3",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {
+  }
 }
