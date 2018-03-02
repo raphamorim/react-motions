@@ -1,6 +1,8 @@
 # React Motions
 
-> Nothing to see here yet
+> Compose React Animations using High-Order Functions or Components
+
+React-Motions is a mix of ideas from [Recompose](https://github.com/acdlite/recompose) and [Animate.css](https://github.com/daneden/animate.css). In fact, `react-motions` is a set of pure functions entirely based on animation purpose.
 
 Using HOF
 
