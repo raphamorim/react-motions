@@ -4,6 +4,14 @@
 
 React-Motions is a mix of ideas from [Recompose](https://github.com/acdlite/recompose) and [Animate.css](https://github.com/daneden/animate.css). In fact, `react-motions` is a set of pure functions entirely based on animation purpose.
 
+React-Motions was created to be agnostic on React Renderers:
+
+| Renderer | Status |
+| :--- | :--- |
+| [React-DOM](github.com/facebook/react) | ✔️ |
+| [React-Native](https://github.com/facebook/react-native) | ✖️ |
+| [React-TV](https://github.com/raphamorim/react-tv) | ✔️ |
+
 Using HOF
 
 ```jsx
@@ -24,16 +32,24 @@ Using Components
 
 import { Bounce, Shake } from 'react-motions'
 
-const ComponentWithShake =  () => (
-	<Shake>
-		<div>How can I look beautiful</div>
-	</Shake>
+const ComponentWithShake = () => (
+  <Shake>
+    <div>How can I look beautiful</div>
+  </Shake>
 )
 
-const ComponentWithShake =  () => (
-	<Bounce>
-		<div>How can I look beautiful</div>
-	</Bouce>
+const ComponentWithShake = () => (
+  <Bounce>
+    <div>How can I look beautiful</div>
+  </Bounce>
 )
 
 ```
+
+# Functions
+
+## Bounce
+
+## Shake
+
+## inSequence
