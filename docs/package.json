@@ -1,0 +1,13 @@
+{
+  "name": "react-motions-docs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Raphael Amorim <rapha850@gmail.com>",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "react-motions": "0.0.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "react-motions",
+  "version": "0.0.1",
+  "description": "Nothing to see here yet",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphamorim/react-motions.git"
+  },
+  "keywords": [],
+  "author": "Raphael Amorim <rapha850@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raphamorim/react-motions/issues"
+  },
+  "homepage": "https://github.com/raphamorim/react-motions#readme"
+}
