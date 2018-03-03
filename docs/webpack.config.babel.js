@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const sourcePath = path.join(__dirname, 'App.js');
 
 const config = {
-  mode: 'production',
+  mode: 'development',
   entry: sourcePath,
   output: {
     path: __dirname,
@@ -15,6 +15,7 @@ const config = {
     modules: [
       sourcePath,
       path.resolve(__dirname, 'node_modules'),
+      path.resolve(__dirname, '../react-motions'),
       path.resolve(__dirname, '../node_modules')
     ],
   },
@@ -24,7 +25,7 @@ const config = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
-        include: sourcePath,
+        include: [sourcePath, path.resolve(__dirname, '../react-motions')],
       },
     ],
   },
@@ -33,17 +34,17 @@ const config = {
     compress: true,
     port: 9000
   },
-  optimization: {
-    minimize: true
-  }
+  // optimization: {
+  //   minimize: true
+  // }
 };
 
-config.plugins.push(
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': JSON.stringify('production'),
-  })
-);
-config.plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
-config.plugins.push(new webpack.HashedModuleIdsPlugin());
+// config.plugins.push(
+//   new webpack.DefinePlugin({
+//     'process.env.NODE_ENV': JSON.stringify('production'),
+//   })
+// );
+// config.plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
+// config.plugins.push(new webpack.HashedModuleIdsPlugin());
 
 module.exports = config;
