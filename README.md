@@ -49,8 +49,56 @@ React-Motions was created to be agnostic to the renderer:
 
 # Functions
 
-## Bounce
+## withBounce
 
-## Shake
+Return a React Component with Bounce animation (`1s` duration)
 
-## inSequence
+```jsx
+import { withBounce } from 'react-motions'
+
+const ComponentWithBounce = withBounce(<div>Let's bounce here</div>)
+```
+
+## withPulse
+
+Return a React Component with Pulse animation (`1s` duration)
+
+```jsx
+import { withPulse } from 'react-motions'
+
+const ComponentWithBounce = withPulse(<div>Let's pulse here</div>)
+```
+
+## withShake
+
+Return a React Component with Shake animation (`1s` duration)
+
+```jsx
+import { withShake } from 'react-motions'
+
+const ComponentWithBounce = withShake(<div>Let's shake here</div>)
+```
+
+## withInfinite
+
+Set last animation with `infinity` property.
+
+```jsx
+import { withInfinite, withShake } from 'react-motions'
+
+const ComponentWithBounce = withInfinite(withShake(<div>Let's shake without stop!</div>))
+```
+
+# Credits
+
+A thanks to [Animate.css](https://github.com/daneden/animate.css) for all animations.
+
+Created by [Raphael Amorim](https://twitter.com/raphamorims).
+
+# Roadmap
+
+- [ ] `withSequence`
+- [ ] `Shake`
+- [ ] `Pulse`
+- [ ] `Bounce`
+- [ ] allows to configure animation property on HOC
