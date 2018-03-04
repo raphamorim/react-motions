@@ -5,7 +5,7 @@
 React-Motions is a mix of ideas from [Recompose](https://github.com/acdlite/recompose) and [Animate.css](https://github.com/daneden/animate.css). In fact, `react-motions` is a set of pure functions entirely based on animation purpose.
 
 ```bash
-yarn add react-motions --dev 
+yarn add react-motions --dev
 ```
 
 # Usage
@@ -137,7 +137,7 @@ const DoNotStopBouncing = withInfinite(withShake(<div>Let's shake without stop!<
 
 ## withSequence
 
-Execute next animation only after previous animation be finished. 
+Execute next animation only after previous animation be finished.
 
 ```jsx
 import { withSequence, withShake, withJello } from 'react-motions'
@@ -167,11 +167,13 @@ const VividAnimation = compose(
 
 - [ ] `withSequence`
 - [ ] `compose`
-- [ ] `<Shake/>`
-- [ ] `<Pulse/>`
-- [ ] `<Bounce/>`
-- [ ] `<Flash/>`
-- [ ] `<Jello/>`
+- [ ] Configurable props for `<Shake/>`
+- [ ] Configurable props for `<Pulse/>`
+- [ ] Configurable props for `<Bounce/>`
+- [ ] Configurable props for `<Flash/>`
+- [ ] Configurable props for `<Jello/>`
+- [ ] Configurable props for `<Tada/>`
+- [ ] Configurable props for `<Wobble/>`
 - [ ] Allows to configure animation property on HOC
 
 # Credits
