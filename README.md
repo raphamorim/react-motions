@@ -4,6 +4,12 @@
 
 React-Motions is a mix of ideas from [Recompose](https://github.com/acdlite/recompose) and [Animate.css](https://github.com/daneden/animate.css). In fact, `react-motions` is a set of pure functions entirely based on animation purpose.
 
+```bash
+yarn add react-motions --dev 
+```
+
+# Usage
+
 Using HOF
 
 ```jsx
@@ -19,7 +25,7 @@ const ComponentWithShakeThenBounce = withSequence(withShake(withBounce(Component
 
 ```
 
-Using Components
+Using Components (in development)
 
 ```jsx
 
@@ -66,7 +72,7 @@ Return a React Component with Pulse animation (`1s` duration)
 ```jsx
 import { withPulse } from 'react-motions'
 
-const ComponentWithBounce = withPulse(<div>Let's pulse here</div>)
+const ComponentWithPulse = withPulse(<div>Let's pulse here</div>)
 ```
 
 ## withShake
@@ -76,7 +82,27 @@ Return a React Component with Shake animation (`1s` duration)
 ```jsx
 import { withShake } from 'react-motions'
 
-const ComponentWithBounce = withShake(<div>Let's shake here</div>)
+const ComponentWithShake = withShake(<div>Let's shake here</div>)
+```
+
+## withJello
+
+Return a React Component with Jello animation (`1s` duration)
+
+```jsx
+import { withJello } from 'react-motions'
+
+const ComponentWithJello = withJello(<div>Jelloooool</div>)
+```
+
+## withFlash
+
+Return a React Component with Flash animation (`1s` duration)
+
+```jsx
+import { withFlash } from 'react-motions'
+
+const ComponentWithFlash = withFlash(<div>Flash! Flash!</div>)
 ```
 
 ## withInfinite
@@ -86,7 +112,35 @@ Set last animation with `infinity` property.
 ```jsx
 import { withInfinite, withShake } from 'react-motions'
 
-const ComponentWithBounce = withInfinite(withShake(<div>Let's shake without stop!</div>))
+const DoNotStopBouncing = withInfinite(withShake(<div>Let's shake without stop!</div>))
+```
+
+## withSequence
+
+Execute next animation only after previous animation be finished. 
+
+```jsx
+import { withSequence, withShake, withJello } from 'react-motions'
+
+const SequencialAnimations = withSequence(
+  withShake,
+  withJello,
+  <div>First shake it then jello! </div>
+)
+```
+
+## compose
+
+Execute all animations in the same time.
+
+```jsx
+import { compose, withFlash, withPulse } from 'react-motions'
+
+const VividAnimation = compose(
+  withFlash,
+  withPulse,
+  <div>Flash and Pulse!</div>
+)
 ```
 
 # Credits
@@ -98,7 +152,10 @@ Created by [Raphael Amorim](https://twitter.com/raphamorims).
 # Roadmap
 
 - [ ] `withSequence`
-- [ ] `Shake`
-- [ ] `Pulse`
-- [ ] `Bounce`
-- [ ] allows to configure animation property on HOC
+- [ ] `compose`
+- [ ] `<Shake/>`
+- [ ] `<Pulse/>`
+- [ ] `<Bounce/>`
+- [ ] `<Flash/>`
+- [ ] `<Jello/>`
+- [ ] Allows to configure animation property on HOC

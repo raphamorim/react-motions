@@ -1,6 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { withBounce, withPulse, withShake, withInfinite } from 'react-motions';
+import {
+  withBounce,
+  withPulse,
+  withShake,
+  withInfinite,
+  withJello,
+  withFlash,
+} from 'react-motions';
 import Select from 'react-select';
 
 const Poster = () => (
@@ -13,27 +20,35 @@ const MOTIONS = {
   withBounce,
   withPulse,
   withShake,
+  withFlash,
+  withJello,
   withBounceInfinite: Component => withInfinite(withBounce(Component)),
   withPulseInfinite: Component => withInfinite(withPulse(Component)),
   withShakeInfinite: Component => withInfinite(withShake(Component)),
+  withFlashInfinite: Component => withInfinite(withFlash(Component)),
+  withJelloInfinite: Component => withInfinite(withJello(Component)),
 };
 
 const OPTIONS = [
   { label: 'withBounce(Component)', value: 'withBounce' },
   { label: 'withShake(Component)', value: 'withShake' },
   { label: 'withPulse(Component)', value: 'withPulse' },
+  { label: 'withFlash(Component)', value: 'withFlash' },
+  { label: 'withJello(Component)', value: 'withJello' },
   { label: 'withInfinite(withBounce(Component))', value: 'withBounceInfinite' },
   { label: 'withInfinite(withPulse(Component))', value: 'withPulseInfinite' },
   { label: 'withInfinite(withShake(Component))', value: 'withShakeInfinite' },
+  { label: 'withInfinite(withFlash(Component))', value: 'withFlashInfinite' },
+  { label: 'withInfinite(withJello(Component))', value: 'withJelloInfinite' },
 ];
 
 class Sandbox extends React.Component {
   constructor(props) {
     super()
     this.state = {
-      value: 'withBounce',
-      example: withBounce(Poster()),
-      code: this.generateCode('withBounce')
+      value: 'withJello',
+      example: withJello(Poster()),
+      code: this.generateCode('withJello')
     }
   }
 
