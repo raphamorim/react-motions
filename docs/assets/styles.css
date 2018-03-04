@@ -77,3 +77,38 @@ pre {
 .link:hover {
   color: #C22B65;
 }
+
+
+@media only screen and (max-width:600px) {
+  body {
+    margin: 0 20px;
+    width: auto;
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .app {
+    margin-bottom: 30px;
+  }
+
+  .code {
+    display: none;
+  }
+
+  .example {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+
+  .Select {
+    position: relative;
+    width: 250px;
+  }
+}

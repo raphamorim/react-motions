@@ -69,7 +69,7 @@ class Sandbox extends React.Component {
       method = [ `withInfinite, ${effect}`, `withInfinite(${effect}(Component))` ]
     }
 
-    const code = `
+    return `
 import React from 'react';
 import { render } from 'react-dom';
 import { ${method[0]} } from 'react-motions';
@@ -81,8 +81,6 @@ const Component = () => (
 );
 
 render(${method[1]}, document.querySelector('#root'));`
-
-    return code;
   }
 
   onChange(value) {
@@ -124,7 +122,7 @@ render(${method[1]}, document.querySelector('#root'));`
 
 function App(argument) {
   return (
-    <div>
+    <div className='app'>
       <h1>React Motions</h1>
       <h2>Compose React Animations using High-Order Functions or Components</h2>
       <Sandbox/>
@@ -132,7 +130,7 @@ function App(argument) {
         className='link'
         href={'https://github.com/raphamorim/react-motions'}
       >
-        See it on Github | YARN ADD react-motions
+        See it on Github
       </a>
     </div>
   );
