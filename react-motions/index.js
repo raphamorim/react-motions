@@ -4,8 +4,8 @@ import withShake from './src/shake/withShake'
 import withJello from './src/jello/withJello'
 import withFlash from './src/flash/withFlash'
 import withInfinite from './src/withInfinite'
-import withTada from './src/withTada'
-import withWobble from './src/withWobble'
+import withTada from './src/tada/withTada'
+import withWobble from './src/wobble/withWobble'
 
 export {
   withBounce,
