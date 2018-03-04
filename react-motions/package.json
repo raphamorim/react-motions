@@ -1,6 +1,6 @@
 {
   "name": "react-motions",
-  "version": "0.2.2",
+  "version": "1.5.1",
   "description": "Compose React Animations using High-Order Functions or Components",
   "files": [
     "react-motions.min.js"
@@ -15,7 +15,6 @@
     "url": "git+https://github.com/raphamorim/react-motions.git"
   },
   "keywords": [],
-  "author": "Raphael Amorim <rapha850@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/raphamorim/react-motions/issues"
