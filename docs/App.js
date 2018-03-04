@@ -6,6 +6,8 @@ import {
   withShake,
   withInfinite,
   withJello,
+  withTada,
+  withWobble,
   withFlash,
 } from 'react-motions';
 import Select from 'react-select';
@@ -21,11 +23,15 @@ const MOTIONS = {
   withPulse,
   withShake,
   withFlash,
+  withTada,
+  withWobble,
   withJello,
   withBounceInfinite: Component => withInfinite(withBounce(Component)),
   withPulseInfinite: Component => withInfinite(withPulse(Component)),
   withShakeInfinite: Component => withInfinite(withShake(Component)),
   withFlashInfinite: Component => withInfinite(withFlash(Component)),
+  withTadaInfinite: Component => withInfinite(withTada(Component)),
+  withWobbleInfinite: Component => withInfinite(withWobble(Component)),
   withJelloInfinite: Component => withInfinite(withJello(Component)),
 };
 
@@ -34,11 +40,15 @@ const OPTIONS = [
   { label: 'withShake(Component)', value: 'withShake' },
   { label: 'withPulse(Component)', value: 'withPulse' },
   { label: 'withFlash(Component)', value: 'withFlash' },
+  { label: 'withTada(Component)', value: 'withTada' },
+  { label: 'withWobble(Component)', value: 'withWobble' },
   { label: 'withJello(Component)', value: 'withJello' },
   { label: 'withInfinite(withBounce(Component))', value: 'withBounceInfinite' },
   { label: 'withInfinite(withPulse(Component))', value: 'withPulseInfinite' },
   { label: 'withInfinite(withShake(Component))', value: 'withShakeInfinite' },
   { label: 'withInfinite(withFlash(Component))', value: 'withFlashInfinite' },
+  { label: 'withInfinite(withTada(Component))', value: 'withTadaInfinite' },
+  { label: 'withInfinite(withWobble(Component))', value: 'withWobbleInfinite' },
   { label: 'withInfinite(withJello(Component))', value: 'withJelloInfinite' },
 ];
 
