@@ -1,8 +1,15 @@
 {
   "name": "react-motions",
-  "version": "0.0.1",
-  "description": "Nothing to see here yet",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Compose React Animations using High-Order Functions or Components",
+  "files": [
+    "react-motions.min.js"
+  ],
+  "author": "Raphael Amorim <rapha850@gmail.com>",
+  "scripts": {
+    "build": "webpack"
+  },
+  "main": "react-motions.min.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raphamorim/react-motions.git"

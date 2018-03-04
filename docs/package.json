@@ -8,7 +8,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "react-motions": "0.0.1",
+    "react-motions": "0.1.0",
     "react-select": "^1.2.1"
   }
 }

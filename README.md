@@ -32,13 +32,13 @@ Using Components (in development)
 import { Bounce, Shake } from 'react-motions'
 
 const ComponentWithShake = () => (
-  <Shake>
+  <Shake duration={4}>
     <div>How can I look beautiful</div>
   </Shake>
 )
 
 const ComponentWithShake = () => (
-  <Bounce>
+  <Bounce onAnimationEnd={() => console.log('animation finished!')}>
     <div>How can I look beautiful</div>
   </Bounce>
 )
@@ -143,12 +143,6 @@ const VividAnimation = compose(
 )
 ```
 
-# Credits
-
-A thanks to [Animate.css](https://github.com/daneden/animate.css) for all animations.
-
-Created by [Raphael Amorim](https://twitter.com/raphamorims).
-
 # Roadmap
 
 - [ ] `withSequence`
@@ -159,3 +153,9 @@ Created by [Raphael Amorim](https://twitter.com/raphamorims).
 - [ ] `<Flash/>`
 - [ ] `<Jello/>`
 - [ ] Allows to configure animation property on HOC
+
+# Credits
+
+A thanks to [Animate.css](https://github.com/daneden/animate.css) for all animations.
+
+Created by [Raphael Amorim](https://twitter.com/raphamorims).
