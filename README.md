@@ -67,6 +67,26 @@ import { withBounce } from 'react-motions'
 const ComponentWithBounce = withBounce(<div>Let's bounce here</div>)
 ```
 
+## withFadeIn
+
+Return a React Component with FadeIn animation (`1s` duration)
+
+```jsx
+import { withFadeIn } from 'react-motions'
+
+const ComponentWithFadeIn = withFadeIn(<div>Let's fadeIn here</div>)
+```
+
+## withFadeOut
+
+Return a React Component with FadeOut animation (`1s` duration)
+
+```jsx
+import { withFadeOut } from 'react-motions'
+
+const ComponentWithFadeOut = withFadeOut(<div>fadeOut here</div>)
+```
+
 ## withPulse
 
 Return a React Component with Pulse animation (`1s` duration)

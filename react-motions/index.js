@@ -8,6 +8,8 @@ import withTada from './src/tada/withTada'
 import withWobble from './src/wobble/withWobble'
 import withRubberBand from './src/rubberBand/withRubberBand'
 import withSwing from './src/swing/withSwing'
+import withFadeOut from './src/fadeOut/withFadeOut'
+import withFadeIn from './src/fadeIn/withFadeIn'
 
 export {
   withBounce,
@@ -20,4 +22,6 @@ export {
   withWobble,
   withRubberBand,
   withSwing,
+  withFadeIn,
+  withFadeOut,
 }
