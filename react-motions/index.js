@@ -7,6 +7,7 @@ import withInfinite from './src/withInfinite'
 import withTada from './src/tada/withTada'
 import withWobble from './src/wobble/withWobble'
 import withRubberBand from './src/rubberBand/withRubberBand'
+import withSwing from './src/swing/withSwing'
 
 export {
   withBounce,
@@ -18,4 +19,5 @@ export {
   withTada,
   withWobble,
   withRubberBand,
+  withSwing,
 }

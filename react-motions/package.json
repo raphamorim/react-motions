@@ -1,6 +1,6 @@
 {
   "name": "react-motions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Compose React Animations using High-Order Functions or Components",
   "files": [
     "react-motions.min.js"
