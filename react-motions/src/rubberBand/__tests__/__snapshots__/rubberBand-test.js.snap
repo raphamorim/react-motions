@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withShake should renderer 1`] = `
+exports[`withRubberBand should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,15 +9,15 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "shake",
+        "WebkitAnimationName": "rubberBand",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "shake",
+        "animationName": "rubberBand",
       }
     }
   >
     <div>
-      Shake
+      rubberBand
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -33,15 +33,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Shake
+        rubberBand
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "shake",
+        "WebkitAnimationName": "rubberBand",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "shake",
+        "animationName": "rubberBand",
       },
     },
     "ref": null,
@@ -50,10 +50,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Shake",
+        "children": "rubberBand",
       },
       "ref": null,
-      "rendered": "Shake",
+      "rendered": "rubberBand",
       "type": "div",
     },
     "type": "div",
@@ -65,15 +65,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Shake
+          rubberBand
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "shake",
+          "WebkitAnimationName": "rubberBand",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "shake",
+          "animationName": "rubberBand",
         },
       },
       "ref": null,
@@ -82,10 +82,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Shake",
+          "children": "rubberBand",
         },
         "ref": null,
-        "rendered": "Shake",
+        "rendered": "rubberBand",
         "type": "div",
       },
       "type": "div",

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withFlash should renderer 1`] = `
+exports[`withWobble should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,15 +9,15 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "flash",
+        "WebkitAnimationName": "wobble",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "flash",
+        "animationName": "wobble",
       }
     }
   >
     <div>
-      Flash
+      Wobble
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -33,15 +33,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Flash
+        Wobble
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "flash",
+        "WebkitAnimationName": "wobble",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "flash",
+        "animationName": "wobble",
       },
     },
     "ref": null,
@@ -50,10 +50,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Flash",
+        "children": "Wobble",
       },
       "ref": null,
-      "rendered": "Flash",
+      "rendered": "Wobble",
       "type": "div",
     },
     "type": "div",
@@ -65,15 +65,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Flash
+          Wobble
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "flash",
+          "WebkitAnimationName": "wobble",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "flash",
+          "animationName": "wobble",
         },
       },
       "ref": null,
@@ -82,10 +82,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Flash",
+          "children": "Wobble",
         },
         "ref": null,
-        "rendered": "Flash",
+        "rendered": "Wobble",
         "type": "div",
       },
       "type": "div",

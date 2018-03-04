@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withTada should renderer 1`] = `
+exports[`withPulse should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,15 +9,15 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "tada",
+        "WebkitAnimationName": "pulse",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "tada",
+        "animationName": "pulse",
       }
     }
   >
     <div>
-      Tada
+      Pulse
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -33,15 +33,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Tada
+        Pulse
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "tada",
+        "WebkitAnimationName": "pulse",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "tada",
+        "animationName": "pulse",
       },
     },
     "ref": null,
@@ -50,10 +50,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Tada",
+        "children": "Pulse",
       },
       "ref": null,
-      "rendered": "Tada",
+      "rendered": "Pulse",
       "type": "div",
     },
     "type": "div",
@@ -65,15 +65,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Tada
+          Pulse
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "tada",
+          "WebkitAnimationName": "pulse",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "tada",
+          "animationName": "pulse",
         },
       },
       "ref": null,
@@ -82,10 +82,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Tada",
+          "children": "Pulse",
         },
         "ref": null,
-        "rendered": "Tada",
+        "rendered": "Pulse",
         "type": "div",
       },
       "type": "div",

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withBounce should render 1`] = `
+exports[`withFlash should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,17 +9,15 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "bounce",
-        "WebkitTransformOrigin": "center bottom",
+        "WebkitAnimationName": "flash",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "bounce",
-        "transformOrigin": "center bottom",
+        "animationName": "flash",
       }
     }
   >
     <div>
-      Bounce
+      Flash
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -35,17 +33,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Bounce
+        Flash
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "bounce",
-        "WebkitTransformOrigin": "center bottom",
+        "WebkitAnimationName": "flash",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "bounce",
-        "transformOrigin": "center bottom",
+        "animationName": "flash",
       },
     },
     "ref": null,
@@ -54,10 +50,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Bounce",
+        "children": "Flash",
       },
       "ref": null,
-      "rendered": "Bounce",
+      "rendered": "Flash",
       "type": "div",
     },
     "type": "div",
@@ -69,17 +65,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Bounce
+          Flash
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "bounce",
-          "WebkitTransformOrigin": "center bottom",
+          "WebkitAnimationName": "flash",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "bounce",
-          "transformOrigin": "center bottom",
+          "animationName": "flash",
         },
       },
       "ref": null,
@@ -88,10 +82,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Bounce",
+          "children": "Flash",
         },
         "ref": null,
-        "rendered": "Bounce",
+        "rendered": "Flash",
         "type": "div",
       },
       "type": "div",

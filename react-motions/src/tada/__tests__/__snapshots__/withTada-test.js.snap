@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withJello should renderer 1`] = `
+exports[`withTada should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,17 +9,15 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "jello",
-        "WebkitTransformOrigin": "center",
+        "WebkitAnimationName": "tada",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "jello",
-        "transformOrigin": "center",
+        "animationName": "tada",
       }
     }
   >
     <div>
-      Jello
+      Tada
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -35,17 +33,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Jello
+        Tada
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "jello",
-        "WebkitTransformOrigin": "center",
+        "WebkitAnimationName": "tada",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "jello",
-        "transformOrigin": "center",
+        "animationName": "tada",
       },
     },
     "ref": null,
@@ -54,10 +50,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Jello",
+        "children": "Tada",
       },
       "ref": null,
-      "rendered": "Jello",
+      "rendered": "Tada",
       "type": "div",
     },
     "type": "div",
@@ -69,17 +65,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Jello
+          Tada
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "jello",
-          "WebkitTransformOrigin": "center",
+          "WebkitAnimationName": "tada",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "jello",
-          "transformOrigin": "center",
+          "animationName": "tada",
         },
       },
       "ref": null,
@@ -88,10 +82,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Jello",
+          "children": "Tada",
         },
         "ref": null,
-        "rendered": "Jello",
+        "rendered": "Tada",
         "type": "div",
       },
       "type": "div",

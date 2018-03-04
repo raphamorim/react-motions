@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withBounce should render 1`] = `
+exports[`withSwing should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,17 +9,17 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "bounce",
-        "WebkitTransformOrigin": "center bottom",
+        "WebkitAnimationName": "swing",
+        "WebkitTransformOrigin": "top center",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "bounce",
-        "transformOrigin": "center bottom",
+        "animationName": "swing",
+        "transformOrigin": "top center",
       }
     }
   >
     <div>
-      Bounce
+      Swing
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -35,17 +35,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Bounce
+        Swing
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "bounce",
-        "WebkitTransformOrigin": "center bottom",
+        "WebkitAnimationName": "swing",
+        "WebkitTransformOrigin": "top center",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "bounce",
-        "transformOrigin": "center bottom",
+        "animationName": "swing",
+        "transformOrigin": "top center",
       },
     },
     "ref": null,
@@ -54,10 +54,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Bounce",
+        "children": "Swing",
       },
       "ref": null,
-      "rendered": "Bounce",
+      "rendered": "Swing",
       "type": "div",
     },
     "type": "div",
@@ -69,17 +69,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Bounce
+          Swing
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "bounce",
-          "WebkitTransformOrigin": "center bottom",
+          "WebkitAnimationName": "swing",
+          "WebkitTransformOrigin": "top center",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "bounce",
-          "transformOrigin": "center bottom",
+          "animationName": "swing",
+          "transformOrigin": "top center",
         },
       },
       "ref": null,
@@ -88,10 +88,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Bounce",
+          "children": "Swing",
         },
         "ref": null,
-        "rendered": "Bounce",
+        "rendered": "Swing",
         "type": "div",
       },
       "type": "div",

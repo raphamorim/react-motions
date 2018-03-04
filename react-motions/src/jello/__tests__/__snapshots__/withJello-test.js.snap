@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withWobble should renderer 1`] = `
+exports[`withJello should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,15 +9,17 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "wobble",
+        "WebkitAnimationName": "jello",
+        "WebkitTransformOrigin": "center",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "wobble",
+        "animationName": "jello",
+        "transformOrigin": "center",
       }
     }
   >
     <div>
-      Wobble
+      Jello
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -33,15 +35,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Wobble
+        Jello
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "wobble",
+        "WebkitAnimationName": "jello",
+        "WebkitTransformOrigin": "center",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "wobble",
+        "animationName": "jello",
+        "transformOrigin": "center",
       },
     },
     "ref": null,
@@ -50,10 +54,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Wobble",
+        "children": "Jello",
       },
       "ref": null,
-      "rendered": "Wobble",
+      "rendered": "Jello",
       "type": "div",
     },
     "type": "div",
@@ -65,15 +69,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Wobble
+          Jello
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "wobble",
+          "WebkitAnimationName": "jello",
+          "WebkitTransformOrigin": "center",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "wobble",
+          "animationName": "jello",
+          "transformOrigin": "center",
         },
       },
       "ref": null,
@@ -82,10 +88,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Wobble",
+          "children": "Jello",
         },
         "ref": null,
-        "rendered": "Wobble",
+        "rendered": "Jello",
         "type": "div",
       },
       "type": "div",

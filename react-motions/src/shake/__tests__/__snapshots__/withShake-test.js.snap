@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withPulse should renderer 1`] = `
+exports[`withShake should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -9,15 +9,15 @@ ShallowWrapper {
       Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "pulse",
+        "WebkitAnimationName": "shake",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "pulse",
+        "animationName": "shake",
       }
     }
   >
     <div>
-      Pulse
+      Shake
     </div>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -33,15 +33,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div>
-        Pulse
+        Shake
       </div>,
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "pulse",
+        "WebkitAnimationName": "shake",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "pulse",
+        "animationName": "shake",
       },
     },
     "ref": null,
@@ -50,10 +50,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Pulse",
+        "children": "Shake",
       },
       "ref": null,
-      "rendered": "Pulse",
+      "rendered": "Shake",
       "type": "div",
     },
     "type": "div",
@@ -65,15 +65,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div>
-          Pulse
+          Shake
         </div>,
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "pulse",
+          "WebkitAnimationName": "shake",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "pulse",
+          "animationName": "shake",
         },
       },
       "ref": null,
@@ -82,10 +82,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Pulse",
+          "children": "Shake",
         },
         "ref": null,
-        "rendered": "Pulse",
+        "rendered": "Shake",
         "type": "div",
       },
       "type": "div",
