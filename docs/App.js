@@ -1,6 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import {
+  Bounce,
+  Pulse,
+  Shake,
+  Jello,
+  Flash,
+  Tada,
+  Wobble,
   withBounce,
   withPulse,
   withShake,
