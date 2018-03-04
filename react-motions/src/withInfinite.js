@@ -1,10 +1,24 @@
 import React from 'react'
 
-function withInfinite(Component) {
-  Component.props.style['WebkitAnimationIterationCount'] = "infinite"
-  Component.props.style['animationIterationCount'] = "infinite"
+const withInfinite  = (Component) => class extends Component {
+  static displayName = `WithInfinite(${
+    Component.displayName || Component.name
+  })`;
 
-  return Component
+  render() {
+    return (
+      const style = {
+        ...this.props.style,
+        WebkitAnimationIterationCount: 'infinite',
+        animationIterationCount: 'infinite',
+      }
+
+      <Component
+        { ...this.props }
+        style={style}
+      />
+    )
+  }
 }
 
 export default withInfinite
