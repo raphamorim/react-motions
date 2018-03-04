@@ -117,6 +117,26 @@ import { withWobble } from 'react-motions'
 const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 ```
 
+## withSwing
+
+Return a React Component with Swing animation (`1s` duration)
+
+```jsx
+import { withSwing } from 'react-motions'
+
+const ComponentWithSwing = withSwing(<div>Swing!</div>)
+```
+
+## withRubberBand
+
+Return a React Component with rubberBand animation (`1s` duration)
+
+```jsx
+import { withRubberBand } from 'react-motions'
+
+const ComponentWithRubberBand = withRubberBand(<div>rubberBand!</div>)
+```
+
 ## withTada
 
 Return a React Component with Tada animation (`1s` duration)
