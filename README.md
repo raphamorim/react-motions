@@ -105,6 +105,26 @@ import { withFlash } from 'react-motions'
 const ComponentWithFlash = withFlash(<div>Flash! Flash!</div>)
 ```
 
+## withWobble
+
+Return a React Component with Wobble animation (`1s` duration)
+
+```jsx
+import { withWobble } from 'react-motions'
+
+const ComponentWithWobble = withWobble(<div>Wobble!</div>)
+```
+
+## withTada
+
+Return a React Component with Tada animation (`1s` duration)
+
+```jsx
+import { withTada } from 'react-motions'
+
+const ComponentWithTada = withTada(<div>Tadaaaan!</div>)
+```
+
 ## withInfinite
 
 Set last animation with `infinity` property.
