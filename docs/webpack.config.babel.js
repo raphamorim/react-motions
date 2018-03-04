@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const sourcePath = path.join(__dirname, 'App.js');
 
 const config = {
-  mode: 'development',
+  mode: 'production',
   entry: sourcePath,
   output: {
     path: __dirname,
@@ -34,17 +34,17 @@ const config = {
     compress: true,
     port: 9000
   },
-  // optimization: {
-  //   minimize: true
-  // }
+  optimization: {
+    minimize: true
+  }
 };
 
-// config.plugins.push(
-//   new webpack.DefinePlugin({
-//     'process.env.NODE_ENV': JSON.stringify('production'),
-//   })
-// );
-// config.plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
-// config.plugins.push(new webpack.HashedModuleIdsPlugin());
+config.plugins.push(
+  new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify('production'),
+  })
+);
+config.plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
+config.plugins.push(new webpack.HashedModuleIdsPlugin());
 
 module.exports = config;
