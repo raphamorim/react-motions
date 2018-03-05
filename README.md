@@ -96,6 +96,19 @@ const VividAnimation = compose(
 ```
 
 ## Bounce
+### Component
+
+Render a React Component with Bounce animation (`2s` duration and iterationCount infinite)
+
+```jsx
+import { Bounce } from 'react-motions'
+
+const ComponentBounce = (
+  <Bounce duration={2} infinite>
+    Let's bounce here
+  </Bounce>
+)
+```
 
 ### Function
 
@@ -245,7 +258,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 
 - [ ] `withSequence`
 - [ ] `compose`
-- [ ] `<Bounce/>`
+- [x] `<Bounce/>`
 - [ ] `<FadeIn/>`
 - [ ] `<FadeOut/>`
 - [x] `<Flash/>`

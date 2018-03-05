@@ -1,6 +1,6 @@
+export { Bounce, withBounce } from './src/bounce'
 export { Flash, withFlash } from './src/flash'
 export { Shake, withShake } from './src/shake'
-import withBounce from './src/bounce/withBounce'
 import withFadeIn from './src/fadeIn/withFadeIn'
 import withFadeOut from './src/fadeOut/withFadeOut'
 import withInfinite from './src/withInfinite'
@@ -12,7 +12,6 @@ import withTada from './src/tada/withTada'
 import withWobble from './src/wobble/withWobble'
 
 export {
-  withBounce,
   withFadeIn,
   withFadeOut,
   withInfinite,
