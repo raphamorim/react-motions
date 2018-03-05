@@ -130,6 +130,19 @@ const ComponentWithFadeOut = withFadeOut(<div>fadeOut here</div>)
 ```
 
 ## Flash
+### Component
+
+Render a React Component with Flash animation (`2s` duration and iterationCount infinite)
+
+```jsx
+import { Flash } from 'react-motions'
+
+const ComponentFlash = (
+  <Flash duration={2} infinite>
+    Let's flash here
+  </Flash>
+)
+```
 ### Function
 
 Return a React Component with Flash animation (`1s` duration)
@@ -235,7 +248,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [ ] `<Bounce/>`
 - [ ] `<FadeIn/>`
 - [ ] `<FadeOut/>`
-- [ ] `<Flash/>`
+- [x] `<Flash/>`
 - [ ] `<Jello/>`
 - [ ] `<Pulse/>`
 - [ ] `<RubberBand/>`
