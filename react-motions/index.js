@@ -1,6 +1,6 @@
 import withBounce from './src/bounce/withBounce'
 import withPulse from './src/pulse/withPulse'
-import withShake from './src/shake/withShake'
+export { Shake, withShake } from './src/shake'
 import withJello from './src/jello/withJello'
 import withFlash from './src/flash/withFlash'
 import withInfinite from './src/withInfinite'
