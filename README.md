@@ -40,7 +40,7 @@ const ComponentWithShake = () => (
 )
 
 const ComponentWithShake = () => (
-  <Bounce onAnimationEnd={() => console.log('animation finished!')}>
+  <Bounce infinite>
     <div>How can I look beautiful</div>
   </Bounce>
 )
@@ -362,17 +362,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 
 - [ ] `withSequence`
 - [ ] `compose`
-- [x] `<Bounce/>`
-- [x] `<FadeIn/>`
-- [x] `<FadeOut/>`
-- [x] `<Flash/>`
-- [x] `<Jello/>`
-- [x] `<Pulse/>`
-- [x] `<RubberBand/>`
-- [x] `<Shake/>`
-- [x] `<Swing/>`
-- [x] `<Tada/>`
-- [x] `<Wobble/>`
+- [ ] Create handler props on Components for bind Animation Hooks
 - [ ] Allows to configure animation property on HOC
 
 # Credits
