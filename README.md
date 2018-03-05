@@ -98,7 +98,7 @@ const VividAnimation = compose(
 ## Bounce
 ### Component
 
-Render a React Component with Bounce animation (`2s` duration and iterationCount infinite)
+Render a React Component with Bounce animation (`2s` duration and iterationCount `infinite`)
 
 ```jsx
 import { Bounce } from 'react-motions'
@@ -123,7 +123,7 @@ const ComponentWithBounce = withBounce(<div>Let's bounce here</div>)
 ## FadeIn
 ### Component
 
-Render a React Component with FadeIn animation (`2s` duration and iterationCount infinite)
+Render a React Component with FadeIn animation (`2s` duration and iterationCount `infinite`)
 
 ```jsx
 import { FadeIn } from 'react-motions'
@@ -147,7 +147,7 @@ const ComponentWithFadeIn = withFadeIn(<div>Let's fadeIn here</div>)
 ## FadeOut
 ### Component
 
-Render a React Component with FadeOut animation (`2s` duration and iterationCount infinite)
+Render a React Component with FadeOut animation (`2s` duration and iterationCount `infinite`)
 
 ```jsx
 import { FadeOut } from 'react-motions'
@@ -171,7 +171,7 @@ const ComponentWithFadeOut = withFadeOut(<div>fadeOut here</div>)
 ## Flash
 ### Component
 
-Render a React Component with Flash animation (`2s` duration and iterationCount infinite)
+Render a React Component with Flash animation (`2s` duration and iterationCount `infinite`)
 
 ```jsx
 import { Flash } from 'react-motions'
@@ -195,7 +195,7 @@ const ComponentWithFlash = withFlash(<div>Flash! Flash!</div>)
 ## Jello
 ### Component
 
-Render a React Component with Jello animation (`2s` duration and iterationCount infinite)
+Render a React Component with Jello animation (`2s` duration and iterationCount `infinite`)
 
 ```jsx
 import { Jello } from 'react-motions'
@@ -217,6 +217,19 @@ const ComponentWithJello = withJello(<div>Jelloooool</div>)
 ```
 
 ## Pulse
+### Component
+
+Render a React Component with Pulse animation (`2s` duration and iterationCount `infinite`)
+
+```jsx
+import { Pulse } from 'react-motions'
+
+const ComponentPulse = (
+  <Pulse duration={2} infinite>
+    Let's pulse here
+  </Pulse>
+)
+```
 ### Function
 
 Return a React Component with Pulse animation (`1s` duration)
@@ -241,7 +254,7 @@ const ComponentWithRubberBand = withRubberBand(<div>rubberBand!</div>)
 ## Shake
 ### Component
 
-Render a React Component with Shake animation (`2s` duration and iterationCount infinite)
+Render a React Component with Shake animation (`2s` duration and iterationCount `infinite`)
 
 ```jsx
 import { Shake } from 'react-motions'
@@ -302,7 +315,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [x] `<FadeOut/>`
 - [x] `<Flash/>`
 - [x] `<Jello/>`
-- [ ] `<Pulse/>`
+- [x] `<Pulse/>`
 - [ ] `<RubberBand/>`
 - [x] `<Shake/>`
 - [ ] `<Swing/>`
