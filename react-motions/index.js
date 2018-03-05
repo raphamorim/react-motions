@@ -1,4 +1,5 @@
 export { Bounce, withBounce } from './src/bounce'
+export { default as withInfinite} from './src/withInfinite'
 export { FadeIn, withFadeIn } from './src/fadeIn'
 export { FadeOut, withFadeOut } from './src/fadeOut'
 export { Flash, withFlash } from './src/flash'
@@ -8,10 +9,4 @@ export { RubberBand, withRubberBand } from './src/rubberBand'
 export { Shake, withShake } from './src/shake'
 export { Swing, withSwing } from './src/swing'
 export { Tada, withTada } from './src/tada'
-import withInfinite from './src/withInfinite'
-import withWobble from './src/wobble/withWobble'
-
-export {
-  withInfinite,
-  withWobble,
-}
+export { Wobble, withWobble } from './src/wobble'

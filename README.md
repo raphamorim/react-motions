@@ -335,6 +335,19 @@ import { withTada } from 'react-motions'
 const ComponentWithTada = withTada(<div>Tadaaaan!</div>)
 ```
 ## Wobble
+### Component
+
+Render a React Component with Wobble animation (`2s` duration and iterationCount `infinite`)
+
+```jsx
+import { Wobble } from 'react-motions'
+
+const ComponentWobble = (
+  <Wobble duration={2} infinite>
+    Let's wobble here
+  </Wobble>
+)
+```
 ### Function
 
 Return a React Component with Wobble animation (`1s` duration)
@@ -359,7 +372,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [x] `<Shake/>`
 - [x] `<Swing/>`
 - [x] `<Tada/>`
-- [ ] `<Wobble/>`
+- [x] `<Wobble/>`
 - [ ] Allows to configure animation property on HOC
 
 # Credits
