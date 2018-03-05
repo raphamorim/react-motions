@@ -241,6 +241,19 @@ const ComponentWithPulse = withPulse(<div>Let's pulse here</div>)
 ```
 
 ## RubberBand
+### Component
+
+Render a React Component with RubberBand animation (`2s` duration and iterationCount `infinite`)
+
+```jsx
+import { RubberBand } from 'react-motions'
+
+const ComponentRubberBand = (
+  <RubberBand duration={2} infinite>
+    Let's rubberBand here
+  </RubberBand>
+)
+```
 ### Function
 
 Return a React Component with rubberBand animation (`1s` duration)
@@ -316,7 +329,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [x] `<Flash/>`
 - [x] `<Jello/>`
 - [x] `<Pulse/>`
-- [ ] `<RubberBand/>`
+- [x] `<RubberBand/>`
 - [x] `<Shake/>`
 - [ ] `<Swing/>`
 - [ ] `<Tada/>`
