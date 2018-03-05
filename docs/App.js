@@ -7,6 +7,8 @@ import {
   Jello,
   Flash,
   Tada,
+  FadeIn,
+  FadeOut,
   Wobble,
   withBounce,
   withPulse,
