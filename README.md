@@ -288,6 +288,19 @@ import { withShake } from 'react-motions'
 const ComponentWithShake = withShake(<div>Let's shake here</div>)
 ```
 ## Swing
+### Component
+
+Render a React Component with Swing animation (`2s` duration and iterationCount `infinite`)
+
+```jsx
+import { Swing } from 'react-motions'
+
+const ComponentSwing = (
+  <Swing duration={2} infinite>
+    Let's swing here
+  </Swing>
+)
+```
 ### Function
 
 Return a React Component with Swing animation (`1s` duration)
@@ -331,7 +344,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [x] `<Pulse/>`
 - [x] `<RubberBand/>`
 - [x] `<Shake/>`
-- [ ] `<Swing/>`
+- [x] `<Swing/>`
 - [ ] `<Tada/>`
 - [ ] `<Wobble/>`
 - [ ] Allows to configure animation property on HOC

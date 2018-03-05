@@ -6,14 +6,13 @@ export { Jello, withJello } from './src/jello'
 export { Pulse, withPulse } from './src/pulse'
 export { RubberBand, withRubberBand } from './src/rubberBand'
 export { Shake, withShake } from './src/shake'
+export { Swing, withSwing } from './src/swing'
 import withInfinite from './src/withInfinite'
-import withSwing from './src/swing/withSwing'
 import withTada from './src/tada/withTada'
 import withWobble from './src/wobble/withWobble'
 
 export {
   withInfinite,
-  withSwing,
   withTada,
   withWobble,
 }
