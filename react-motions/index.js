@@ -7,8 +7,8 @@ export { Pulse, withPulse } from './src/pulse'
 export { RubberBand, withRubberBand } from './src/rubberBand'
 export { Shake, withShake } from './src/shake'
 export { Swing, withSwing } from './src/swing'
+export { Tada, withTada } from './src/tada'
 import withInfinite from './src/withInfinite'
-import withTada from './src/tada/withTada'
 import withWobble from './src/wobble/withWobble'
 
 export {
@@ -17,6 +17,5 @@ export {
   withFadeIn,
   withFadeOut,
   withInfinite,
-  withTada,
   withWobble,
 }
