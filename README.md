@@ -145,6 +145,19 @@ const ComponentWithFadeIn = withFadeIn(<div>Let's fadeIn here</div>)
 ```
 
 ## FadeOut
+### Component
+
+Render a React Component with FadeOut animation (`2s` duration and iterationCount infinite)
+
+```jsx
+import { FadeOut } from 'react-motions'
+
+const ComponentFadeOut = (
+  <FadeOut duration={2} infinite>
+    Let's fadeOut here
+  </FadeOut>
+)
+```
 ### Function
 
 Return a React Component with FadeOut animation (`1s` duration)
@@ -273,7 +286,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [ ] `compose`
 - [x] `<Bounce/>`
 - [x] `<FadeIn/>`
-- [ ] `<FadeOut/>`
+- [x] `<FadeOut/>`
 - [x] `<Flash/>`
 - [ ] `<Jello/>`
 - [ ] `<Pulse/>`
