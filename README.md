@@ -311,6 +311,19 @@ import { withSwing } from 'react-motions'
 const ComponentWithSwing = withSwing(<div>Swing!</div>)
 ```
 ## Tada
+### Component
+
+Render a React Component with Tada animation (`2s` duration and iterationCount `infinite`)
+
+```jsx
+import { Tada } from 'react-motions'
+
+const ComponentTada = (
+  <Tada duration={2} infinite>
+    Let's tada here
+  </Tada>
+)
+```
 
 ### Function
 
@@ -345,7 +358,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [x] `<RubberBand/>`
 - [x] `<Shake/>`
 - [x] `<Swing/>`
-- [ ] `<Tada/>`
+- [x] `<Tada/>`
 - [ ] `<Wobble/>`
 - [ ] Allows to configure animation property on HOC
 
