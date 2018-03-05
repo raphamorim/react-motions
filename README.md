@@ -193,6 +193,19 @@ const ComponentWithFlash = withFlash(<div>Flash! Flash!</div>)
 ```
 
 ## Jello
+### Component
+
+Render a React Component with Jello animation (`2s` duration and iterationCount infinite)
+
+```jsx
+import { Jello } from 'react-motions'
+
+const ComponentJello = (
+  <Jello duration={2} infinite>
+    Let's jello here
+  </Jello>
+)
+```
 ### Function
 
 Return a React Component with Jello animation (`1s` duration)
@@ -288,7 +301,7 @@ const ComponentWithWobble = withWobble(<div>Wobble!</div>)
 - [x] `<FadeIn/>`
 - [x] `<FadeOut/>`
 - [x] `<Flash/>`
-- [ ] `<Jello/>`
+- [x] `<Jello/>`
 - [ ] `<Pulse/>`
 - [ ] `<RubberBand/>`
 - [x] `<Shake/>`
