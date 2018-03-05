@@ -1,6 +1,6 @@
 {
   "name": "react-motions",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "Compose React Animations using High-Order Functions or Components",
   "files": [
     "react-motions.min.js"
@@ -22,5 +22,6 @@
   "homepage": "https://github.com/raphamorim/react-motions#readme",
   "devDependencies": {
     "webpack": "^4.1.0"
-  }
+  },
+  "dependencies": {}
 }

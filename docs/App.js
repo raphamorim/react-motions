@@ -9,6 +9,8 @@ import {
   withTada,
   withWobble,
   withFlash,
+  withFadeIn,
+  withFadeOut,
 } from 'react-motions';
 import Select from 'react-select';
 
@@ -26,6 +28,8 @@ const MOTIONS = {
   withTada,
   withWobble,
   withJello,
+  withFadeIn,
+  withFadeOut,
   withBounceInfinite: Component => withInfinite(withBounce(Component)),
   withPulseInfinite: Component => withInfinite(withPulse(Component)),
   withShakeInfinite: Component => withInfinite(withShake(Component)),
@@ -38,6 +42,8 @@ const MOTIONS = {
 const OPTIONS = [
   { label: 'withBounce(Component)', value: 'withBounce' },
   { label: 'withShake(Component)', value: 'withShake' },
+  { label: 'withFadeIn(Component)', value: 'withFadeIn' },
+  { label: 'withFadeOut(Component)', value: 'withFadeOut' },
   { label: 'withPulse(Component)', value: 'withPulse' },
   { label: 'withFlash(Component)', value: 'withFlash' },
   { label: 'withTada(Component)', value: 'withTada' },

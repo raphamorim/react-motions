@@ -16,7 +16,12 @@ const config = {
   },
   externals: {
     // Use external version of React
-    "react": "React"
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
   },
   resolve: {
     extensions: ['.js', '.jsx'],

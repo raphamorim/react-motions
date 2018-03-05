@@ -1,5 +1,7 @@
 # React Motions
 
+[![CircleCI](https://circleci.com/gh/raphamorim/react-motions/tree/master.svg?style=svg)](https://circleci.com/gh/raphamorim/react-motions/tree/master)
+
 > Compose React Animations using High-Order Functions or Components
 
 React-Motions is a mix of ideas from [Recompose](https://github.com/acdlite/recompose) and [Animate.css](https://github.com/daneden/animate.css). In fact, `react-motions` is a set of pure functions entirely based on animation purpose.
@@ -65,6 +67,26 @@ import { withBounce } from 'react-motions'
 const ComponentWithBounce = withBounce(<div>Let's bounce here</div>)
 ```
 
+## withFadeIn
+
+Return a React Component with FadeIn animation (`1s` duration)
+
+```jsx
+import { withFadeIn } from 'react-motions'
+
+const ComponentWithFadeIn = withFadeIn(<div>Let's fadeIn here</div>)
+```
+
+## withFadeOut
+
+Return a React Component with FadeOut animation (`1s` duration)
+
+```jsx
+import { withFadeOut } from 'react-motions'
+
+const ComponentWithFadeOut = withFadeOut(<div>fadeOut here</div>)
+```
+
 ## withPulse
 
 Return a React Component with Pulse animation (`1s` duration)
@@ -113,6 +135,26 @@ Return a React Component with Wobble animation (`1s` duration)
 import { withWobble } from 'react-motions'
 
 const ComponentWithWobble = withWobble(<div>Wobble!</div>)
+```
+
+## withSwing
+
+Return a React Component with Swing animation (`1s` duration)
+
+```jsx
+import { withSwing } from 'react-motions'
+
+const ComponentWithSwing = withSwing(<div>Swing!</div>)
+```
+
+## withRubberBand
+
+Return a React Component with rubberBand animation (`1s` duration)
+
+```jsx
+import { withRubberBand } from 'react-motions'
+
+const ComponentWithRubberBand = withRubberBand(<div>rubberBand!</div>)
 ```
 
 ## withTada
