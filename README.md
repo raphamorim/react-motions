@@ -209,7 +209,7 @@ const VividAnimation = compose(
 
 - [ ] `withSequence`
 - [ ] `compose`
-- [ ] `<Shake/>`
+- [x] `<Shake/>`
 - [ ] `<Pulse/>`
 - [ ] `<Bounce/>`
 - [ ] `<Flash/>`
