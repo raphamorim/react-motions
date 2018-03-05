@@ -1,12 +1,27 @@
-export { Bounce, withBounce } from './src/bounce'
-export { default as withInfinite} from './src/withInfinite'
-export { FadeIn, withFadeIn } from './src/fadeIn'
-export { FadeOut, withFadeOut } from './src/fadeOut'
-export { Flash, withFlash } from './src/flash'
-export { Jello, withJello } from './src/jello'
-export { Pulse, withPulse } from './src/pulse'
-export { RubberBand, withRubberBand } from './src/rubberBand'
-export { Shake, withShake } from './src/shake'
-export { Swing, withSwing } from './src/swing'
-export { Tada, withTada } from './src/tada'
-export { Wobble, withWobble } from './src/wobble'
+import withBounce from './src/bounce/withBounce'
+import withPulse from './src/pulse/withPulse'
+import withShake from './src/shake/withShake'
+import withJello from './src/jello/withJello'
+import withFlash from './src/flash/withFlash'
+import withInfinite from './src/withInfinite'
+import withTada from './src/tada/withTada'
+import withWobble from './src/wobble/withWobble'
+import withRubberBand from './src/rubberBand/withRubberBand'
+import withSwing from './src/swing/withSwing'
+import withFadeOut from './src/fadeOut/withFadeOut'
+import withFadeIn from './src/fadeIn/withFadeIn'
+
+export {
+  withBounce,
+  withPulse,
+  withShake,
+  withJello,
+  withFlash,
+  withInfinite,
+  withTada,
+  withWobble,
+  withRubberBand,
+  withSwing,
+  withFadeIn,
+  withFadeOut,
+}

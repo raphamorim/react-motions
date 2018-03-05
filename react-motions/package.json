@@ -5,6 +5,7 @@
   "files": [
     "react-motions.min.js"
   ],
+  "author": "Raphael Amorim <rapha850@gmail.com>",
   "scripts": {
     "build": "webpack"
   },
