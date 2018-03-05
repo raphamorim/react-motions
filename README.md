@@ -55,117 +55,7 @@ React-Motions was created to be agnostic to the renderer:
 | [React-Native](https://github.com/facebook/react-native) | ✖️ | ✖️ |
 | [React-TV](https://github.com/raphamorim/react-tv) | ✔️ | `^0.3`
 
-# Functions
-
-## withBounce
-
-Return a React Component with Bounce animation (`1s` duration)
-
-```jsx
-import { withBounce } from 'react-motions'
-
-const ComponentWithBounce = withBounce(<div>Let's bounce here</div>)
-```
-
-## withFadeIn
-
-Return a React Component with FadeIn animation (`1s` duration)
-
-```jsx
-import { withFadeIn } from 'react-motions'
-
-const ComponentWithFadeIn = withFadeIn(<div>Let's fadeIn here</div>)
-```
-
-## withFadeOut
-
-Return a React Component with FadeOut animation (`1s` duration)
-
-```jsx
-import { withFadeOut } from 'react-motions'
-
-const ComponentWithFadeOut = withFadeOut(<div>fadeOut here</div>)
-```
-
-## withPulse
-
-Return a React Component with Pulse animation (`1s` duration)
-
-```jsx
-import { withPulse } from 'react-motions'
-
-const ComponentWithPulse = withPulse(<div>Let's pulse here</div>)
-```
-
-## withShake
-
-Return a React Component with Shake animation (`1s` duration)
-
-```jsx
-import { withShake } from 'react-motions'
-
-const ComponentWithShake = withShake(<div>Let's shake here</div>)
-```
-
-## withJello
-
-Return a React Component with Jello animation (`1s` duration)
-
-```jsx
-import { withJello } from 'react-motions'
-
-const ComponentWithJello = withJello(<div>Jelloooool</div>)
-```
-
-## withFlash
-
-Return a React Component with Flash animation (`1s` duration)
-
-```jsx
-import { withFlash } from 'react-motions'
-
-const ComponentWithFlash = withFlash(<div>Flash! Flash!</div>)
-```
-
-## withWobble
-
-Return a React Component with Wobble animation (`1s` duration)
-
-```jsx
-import { withWobble } from 'react-motions'
-
-const ComponentWithWobble = withWobble(<div>Wobble!</div>)
-```
-
-## withSwing
-
-Return a React Component with Swing animation (`1s` duration)
-
-```jsx
-import { withSwing } from 'react-motions'
-
-const ComponentWithSwing = withSwing(<div>Swing!</div>)
-```
-
-## withRubberBand
-
-Return a React Component with rubberBand animation (`1s` duration)
-
-```jsx
-import { withRubberBand } from 'react-motions'
-
-const ComponentWithRubberBand = withRubberBand(<div>rubberBand!</div>)
-```
-
-## withTada
-
-Return a React Component with Tada animation (`1s` duration)
-
-```jsx
-import { withTada } from 'react-motions'
-
-const ComponentWithTada = withTada(<div>Tadaaaan!</div>)
-```
+# API
 
 ## withInfinite
 
@@ -205,15 +95,154 @@ const VividAnimation = compose(
 )
 ```
 
+## Bounce
+
+### Function
+
+Return a React Component with Bounce animation (`1s` duration)
+
+```jsx
+import { withBounce } from 'react-motions'
+
+const ComponentWithBounce = withBounce(<div>Let's bounce here</div>)
+```
+
+## FadeIn
+### Function
+
+Return a React Component with FadeIn animation (`1s` duration)
+
+```jsx
+import { withFadeIn } from 'react-motions'
+
+const ComponentWithFadeIn = withFadeIn(<div>Let's fadeIn here</div>)
+```
+
+## FadeOut
+### Function
+
+Return a React Component with FadeOut animation (`1s` duration)
+
+```jsx
+import { withFadeOut } from 'react-motions'
+
+const ComponentWithFadeOut = withFadeOut(<div>fadeOut here</div>)
+```
+
+## Flash
+### Function
+
+Return a React Component with Flash animation (`1s` duration)
+
+```jsx
+import { withFlash } from 'react-motions'
+
+const ComponentWithFlash = withFlash(<div>Flash! Flash!</div>)
+```
+
+## Jello
+### Function
+
+Return a React Component with Jello animation (`1s` duration)
+
+```jsx
+import { withJello } from 'react-motions'
+
+const ComponentWithJello = withJello(<div>Jelloooool</div>)
+```
+
+## Pulse
+### Function
+
+Return a React Component with Pulse animation (`1s` duration)
+
+```jsx
+import { withPulse } from 'react-motions'
+
+const ComponentWithPulse = withPulse(<div>Let's pulse here</div>)
+```
+
+## RubberBand
+### Function
+
+Return a React Component with rubberBand animation (`1s` duration)
+
+```jsx
+import { withRubberBand } from 'react-motions'
+
+const ComponentWithRubberBand = withRubberBand(<div>rubberBand!</div>)
+```
+
+## Shake
+### Component
+
+Render a React Component with Shake animation (`2s` duration and iterationCount infinite)
+
+```jsx
+import { Shake } from 'react-motions'
+
+const ComponentShake = (
+  <Shake duration={2} infinite>
+    Let's shake here
+  </Shake>
+)
+```
+### Function
+
+Return a React Component with Shake animation (`1s` duration)
+
+```jsx
+import { withShake } from 'react-motions'
+
+const ComponentWithShake = withShake(<div>Let's shake here</div>)
+```
+## Swing
+### Function
+
+Return a React Component with Swing animation (`1s` duration)
+
+```jsx
+import { withSwing } from 'react-motions'
+
+const ComponentWithSwing = withSwing(<div>Swing!</div>)
+```
+## Tada
+
+### Function
+
+Return a React Component with Tada animation (`1s` duration)
+
+```jsx
+import { withTada } from 'react-motions'
+
+const ComponentWithTada = withTada(<div>Tadaaaan!</div>)
+```
+## Wobble
+### Function
+
+Return a React Component with Wobble animation (`1s` duration)
+
+```jsx
+import { withWobble } from 'react-motions'
+
+const ComponentWithWobble = withWobble(<div>Wobble!</div>)
+```
+
 # Roadmap
 
 - [ ] `withSequence`
 - [ ] `compose`
-- [ ] `<Shake/>`
-- [ ] `<Pulse/>`
 - [ ] `<Bounce/>`
+- [ ] `<FadeIn/>`
+- [ ] `<FadeOut/>`
 - [ ] `<Flash/>`
 - [ ] `<Jello/>`
+- [ ] `<Pulse/>`
+- [ ] `<RubberBand/>`
+- [x] `<Shake/>`
+- [ ] `<Swing/>`
+- [ ] `<Tada/>`
+- [ ] `<Wobble/>`
 - [ ] Allows to configure animation property on HOC
 
 # Credits
