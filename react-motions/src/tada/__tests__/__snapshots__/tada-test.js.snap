@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RubberBand should render 1`] = `
+exports[`Tada should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RubberBand
+  Symbol(enzyme.__unrendered__): <Tada
     duration={1}
     fillMode="both"
     infinite={false}
   >
-    RubberBand
-  </RubberBand>,
+    Tada
+  </Tada>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -23,18 +23,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "RubberBand",
+      "children": "Tada",
       "style": Object {
         "WebkitAnimationDuration": "1s",
         "WebkitAnimationFillMode": "both",
-        "WebkitAnimationName": "rubberBand",
+        "WebkitAnimationName": "tada",
         "animationDuration": "1s",
         "animationFillMode": "both",
-        "animationName": "rubberBand",
+        "animationName": "tada",
       },
     },
     "ref": null,
-    "rendered": "RubberBand",
+    "rendered": "Tada",
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -43,18 +43,18 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "RubberBand",
+        "children": "Tada",
         "style": Object {
           "WebkitAnimationDuration": "1s",
           "WebkitAnimationFillMode": "both",
-          "WebkitAnimationName": "rubberBand",
+          "WebkitAnimationName": "tada",
           "animationDuration": "1s",
           "animationFillMode": "both",
-          "animationName": "rubberBand",
+          "animationName": "tada",
         },
       },
       "ref": null,
-      "rendered": "RubberBand",
+      "rendered": "Tada",
       "type": "div",
     },
   ],

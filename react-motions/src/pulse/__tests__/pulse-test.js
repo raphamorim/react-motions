@@ -1,24 +1,24 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import RubberBand from '../rubberBand';
+import Pulse from '../pulse';
 
-describe('RubberBand', () => {
+describe('Pulse', () => {
   it('should render', () => {
-    const wrapper = shallow(<RubberBand>RubberBand</RubberBand>);
+    const wrapper = shallow(<Pulse>Pulse</Pulse>);
 
     expect(wrapper).toMatchSnapshot();
   });
   it('should receive duration prop', () => {
-    const wrapper = mount(<RubberBand duration={3}>RubberBand</RubberBand>);
+    const wrapper = mount(<Pulse duration={3}>Pulse</Pulse>);
 
     expect(wrapper.props().duration).toEqual(3);
   });
   it('should receive fillMode prop', () => {
-    const wrapper = mount(<RubberBand fillMode="both">RubberBand</RubberBand>);
+    const wrapper = mount(<Pulse fillMode="both">Pulse</Pulse>);
     expect(wrapper.props().fillMode).toEqual("both");
   });
   it('should render correctly when infinite', () => {
-    const wrapper = mount(<RubberBand infinite>RubberBand</RubberBand>);
+    const wrapper = mount(<Pulse infinite>Pulse</Pulse>);
 
     expect(wrapper.props().infinite).toBe(true);
   });

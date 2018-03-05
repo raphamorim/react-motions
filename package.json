@@ -18,6 +18,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "22.4.1",
+    "prop-types": "^15.6.1",
     "react": "^16.4.0-alpha.0911da3",
     "react-dom": "^16.4.0-alpha.0911da3",
     "react-motions": "0.2.2",
