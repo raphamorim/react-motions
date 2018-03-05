@@ -216,6 +216,8 @@ const VividAnimation = compose(
 - [ ] Configurable props for `<Jello/>`
 - [ ] Configurable props for `<Tada/>`
 - [ ] Configurable props for `<Wobble/>`
+- [ ] Configurable props for `<FadeIn/>`
+- [ ] Configurable props for `<FadeOut/>`
 - [ ] Allows to configure animation property on HOC
 
 # Credits
