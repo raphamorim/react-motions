@@ -15,7 +15,6 @@ yarn add react-motions --dev
 Using HOF
 
 ```jsx
-
 import { withBounce, withShake, withInfinite, withSequence } from 'react-motions'
 
 const Component = <div>How can I look beautiful</div>
@@ -24,13 +23,11 @@ const ComponentWithShake = withShake(Component)
 const ComponentWithShakeAndBounce = withShake(withBounce(Component))
 const ComponentWithInfiniteBounce = withInfinite(withBounce(Component))
 const ComponentWithShakeThenBounce = withSequence(withShake(withBounce(Component)))
-
 ```
 
 Using Components (in development)
 
 ```jsx
-
 import { Bounce, Shake } from 'react-motions'
 
 const ComponentWithShake = () => (
@@ -44,7 +41,6 @@ const ComponentWithShake = () => (
     <div>How can I look beautiful</div>
   </Bounce>
 )
-
 ```
 
 React-Motions was created to be agnostic to the renderer:
