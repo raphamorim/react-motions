@@ -25,7 +25,7 @@ const ComponentWithInfiniteBounce = withInfinite(withBounce(Component))
 const ComponentWithShakeThenBounce = withSequence(withShake(withBounce(Component)))
 ```
 
-Using Components (in development)
+Using Components
 
 ```jsx
 import { Bounce, Shake } from 'react-motions'

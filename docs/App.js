@@ -2,10 +2,12 @@ import React from 'react';
 import { render } from 'react-dom';
 import {
   withBounce,
+  Bounce,
   withPulse,
   withShake,
   withInfinite,
   withJello,
+  Jello,
   withTada,
   withWobble,
   withFlash,
@@ -41,14 +43,16 @@ const MOTIONS = {
 
 const OPTIONS = [
   { label: 'withBounce(Component)', value: 'withBounce' },
+  { label: 'withPulse(Component)', value: 'withPulse' },
   { label: 'withShake(Component)', value: 'withShake' },
   { label: 'withFadeIn(Component)', value: 'withFadeIn' },
   { label: 'withFadeOut(Component)', value: 'withFadeOut' },
-  { label: 'withPulse(Component)', value: 'withPulse' },
   { label: 'withFlash(Component)', value: 'withFlash' },
   { label: 'withTada(Component)', value: 'withTada' },
   { label: 'withWobble(Component)', value: 'withWobble' },
   { label: 'withJello(Component)', value: 'withJello' },
+  { label: '<Bounce duration={3}/>', value: 'Bounce duration={3}' },
+  { label: '<Jello infinite/>', value: 'Jello infinite' },
   { label: 'withInfinite(withBounce(Component))', value: 'withBounceInfinite' },
   { label: 'withInfinite(withPulse(Component))', value: 'withPulseInfinite' },
   { label: 'withInfinite(withShake(Component))', value: 'withShakeInfinite' },
@@ -68,10 +72,17 @@ class Sandbox extends React.Component {
     }
   }
 
+  // unproud of this method
   generateCode(method) {
     method = [ method, `${method}(Component)` ];
-    if (method[0].indexOf('Infinite') > -1) {
-      const effect = method[0].replace('Infinite', '');
+
+    if (method[0].indexOf('with') <= -1) {
+      const ComponentName = method[0].replace(/ .*/,'')
+      method = [ ComponentName, `<${method[0]}><Component/></${ComponentName}>` ]
+    }
+
+    if (method[0].indexOf('withInfinite') > -1) {
+      const effect = method[0].replace('Infinite', '')
       method = [ `withInfinite, ${effect}`, `withInfinite(${effect}(Component))` ]
     }
 
@@ -86,13 +97,29 @@ const Component = () => (
   </div>
 );
 
-render(${method[1]}, document.querySelector('#root'));`
+render(
+  ${method[1]},
+  document.querySelector('#root')
+);`
   }
 
   onChange(value) {
+    let example;
+
+    if (value.indexOf('with') <= -1) {
+      const ComponentName = value.replace(/ .*/,'')
+      if (ComponentName === 'Bounce') {
+        example = <Bounce duration={3}>{Poster()}</Bounce>
+      } else if (ComponentName === 'Jello') {
+        example = <Jello infinite>{Poster()}</Jello>
+      }
+    } else {
+      example = MOTIONS[value](Poster());
+    }
+
     this.setState({
       value,
-      example: MOTIONS[value](Poster()),
+      example,
       code: this.generateCode(value),
     });
   }
