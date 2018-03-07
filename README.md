@@ -25,6 +25,26 @@ const ComponentWithInfiniteBounce = withInfinite(withBounce(Component))
 const ComponentWithShakeThenBounce = withSequence(withShake(withBounce(Component)))
 ```
 
+HOF - Based on Compositions
+
+You can add compose animations (even custom animations) based on functions. Here is an example:
+
+```jsx
+import { withShake, withFadeOut, withInfine } from 'react-motions'
+
+const Component = () => (
+  withInfinite(
+    withFadeOut(
+      withInfinite(
+        withShake(
+          <h2>Bouncing and Fading Out infinitely!!</h2>
+        )
+      )
+    )
+  )
+)
+```
+
 Using Components
 
 ```jsx
