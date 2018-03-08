@@ -1,5 +1,7 @@
 export { Bounce, withBounce } from './src/bounce'
 export { default as withInfinite} from './src/withInfinite'
+export { default as withConfig} from './src/withConfig'
+export { default as withSequence} from './src/withSequence'
 export { FadeIn, withFadeIn } from './src/fadeIn'
 export { FadeOut, withFadeOut } from './src/fadeOut'
 export { Flash, withFlash } from './src/flash'
