@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withSwing(Component) {
   const style = {
@@ -20,4 +21,4 @@ function withSwing(Component) {
   )
 }
 
-export default withSwing
+export default memoize(withSwing)

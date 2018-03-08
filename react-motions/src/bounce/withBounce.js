@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withBounce(Component) {
   const style = {
@@ -20,4 +21,4 @@ function withBounce(Component) {
   )
 }
 
-export default withBounce
+export default memoize(withBounce)

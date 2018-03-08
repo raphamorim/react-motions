@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withJello(Component) {
   const style = {
@@ -20,4 +21,4 @@ function withJello(Component) {
   )
 }
 
-export default withJello
+export default memoize(withJello)

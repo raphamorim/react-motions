@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withWobble(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withWobble(Component) {
   )
 }
 
-export default withWobble
+export default memoize(withWobble)

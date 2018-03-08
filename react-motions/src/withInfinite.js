@@ -1,24 +1,13 @@
 import React from 'react'
+import memoize from 'fast-memoize'
 
-const withInfinite  = (Component) => class extends Component {
-  static displayName = `WithInfinite(${
-    Component.displayName || Component.name
-  })`;
+// TODO: rewrite it to keep displayName
 
-  render() {
-    return (
-      const style = {
-        ...this.props.style,
-        WebkitAnimationIterationCount: 'infinite',
-        animationIterationCount: 'infinite',
-      }
+const withInfinite = (Component) => {
+  Component.props.style['WebkitAnimationIterationCount'] = "infinite"
+  Component.props.style['animationIterationCount'] = "infinite"
 
-      <Component
-        { ...this.props }
-        style={style}
-      />
-    )
-  }
+  return Component
 }
 
-export default withInfinite
+export default memoize(withInfinite)

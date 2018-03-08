@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withTada(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withTada(Component) {
   )
 }
 
-export default withTada
+export default memoize(withTada)

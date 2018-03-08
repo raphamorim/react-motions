@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withFadeIn(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withFadeIn(Component) {
   )
 }
 
-export default withFadeIn
+export default memoize(withFadeIn)

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withFlash(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withFlash(Component) {
   )
 }
 
-export default withFlash
+export default memoize(withFlash)

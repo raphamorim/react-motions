@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const sourcePath = path.join(__dirname, 'App.js');
 
 const config = {
-  mode: 'production',
+  mode: 'development',
   entry: sourcePath,
   output: {
     path: __dirname,
@@ -34,9 +34,9 @@ const config = {
     compress: true,
     port: 9000
   },
-  optimization: {
-    minimize: true
-  }
+  // optimization: {
+  //   minimize: true
+  // }
 };
 
 config.plugins.push(

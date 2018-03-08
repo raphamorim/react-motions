@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withRubberBand(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withRubberBand(Component) {
   )
 }
 
-export default withRubberBand
+export default memoize(withRubberBand)

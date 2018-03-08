@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withPulse(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withPulse(Component) {
   )
 }
 
-export default withPulse
+export default memoize(withPulse)

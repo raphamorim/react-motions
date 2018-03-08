@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles'
+import memoize from 'fast-memoize'
 
 function withShake(Component) {
   const style = {
@@ -18,4 +19,4 @@ function withShake(Component) {
   )
 }
 
-export default withShake
+export default memoize(withShake)
