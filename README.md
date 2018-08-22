@@ -56,7 +56,7 @@ const ComponentWithShake = () => (
   </Shake>
 )
 
-const ComponentWithShake = () => (
+const ComponentWithBounce = () => (
   <Bounce infinite>
     <div>How can I look beautiful</div>
   </Bounce>
@@ -78,9 +78,9 @@ React-Motions was created to be agnostic to the renderer:
 Set last animation with `infinity` property.
 
 ```jsx
-import { withInfinite, withShake } from 'react-motions'
+import { withInfinite, withBounce } from 'react-motions'
 
-const DoNotStopBouncing = withInfinite(withShake(<div>Let's shake without stop!</div>))
+const DoNotStopBouncing = withInfinite(withBounce(<div>Let's bounce without stop!</div>))
 ```
 
 ## withSequence
