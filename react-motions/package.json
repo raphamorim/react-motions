@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/raphamorim/react-motions/issues"
   },
-  "homepage": "https://github.com/raphamorim/react-motions#readme"
+  "homepage": "https://github.com/raphamorim/react-motions#readme",
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  }
 }
